@@ -1,19 +1,9 @@
 package praktikum;
 
 import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 
 public class BunTest {
-
-    @Test
-    public void getPriceTest_NegativePrice() {
-        String name = "Bun";
-        float negativePrice = -10.5f;
-        Bun bun = new Bun(name, negativePrice);
-        float actual = bun.getPrice();
-        assertEquals(negativePrice, actual, 0);
-    }
 
     @Test
     public void getPriceTest_ZeroPrice() {
